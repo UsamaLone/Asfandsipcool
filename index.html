@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asfand Cool Sips - Fresh and Cold Juices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo" id="logo-home">
+                    <div class="logo-icon">
+                        <i class="fas fa-glass-whiskey"></i>
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <span>Asfand Cool Sips</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=1200&h=600&fit=crop" alt="Orange Juice">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=1200&h=600&fit=crop" alt="Mixed Juices">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=1200&h=600&fit=crop" alt="Apple Juice">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=1200&h=600&fit=crop" alt="Green Juice">
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Asfand Cool Sips</h1>
+                <h2>Fresh & Natural Juices</h2>
+                <p>Experience the pure taste of nature with our premium fresh juice collection</p>
+                <button class="cta-button glow-btn">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Why Choose Asfand Cool Sips?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>100% Natural</h3>
+                    <p>No artificial colors or preservatives added</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Cool Guarantee</h3>
+                    <p>Freshness and coolness in every sip</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Healthy Choice</h3>
+                    <p>Rich in vitamins and minerals</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Fresh juices delivered to your door</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Premium Juices</h2>
+            <div class="products-grid">
+                <div class="product-card active" onclick="showProduct(0)">
+                    <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Orange Juice">
+                    <div class="product-info">
+                        <h3>Fresh Orange Juice</h3>
+                        <p>Made from pure Valencia oranges</p>
+                        <div class="price">$4.99</div>
+                        <button class="add-to-cart glow-btn" data-product="Fresh Orange Juice" data-price="4.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProduct(1)">
+                    <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Apple Juice">
+                    <div class="product-info">
+                        <h3>Green Apple Juice</h3>
+                        <p>Fresh Granny Smith apples</p>
+                        <div class="price">$5.49</div>
+                        <button class="add-to-cart glow-btn" data-product="Green Apple Juice" data-price="5.49">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProduct(2)">
+                    <img src="https://images.unsplash.com/photo-1546173159-315724a31696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Carrot Juice">
+                    <div class="product-info">
+                        <h3>Carrot Ginger Juice</h3>
+                        <p>Nutritious carrots with fresh ginger</p>
+                        <div class="price">$6.99</div>
+                        <button class="add-to-cart glow-btn" data-product="Carrot Ginger Juice" data-price="6.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProduct(3)">
+                    <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Mixed Berry Juice">
+                    <div class="product-info">
+                        <h3>Mixed Berry Juice</h3>
+                        <p>Strawberry, blueberry and raspberry blend</p>
+                        <div class="price">$7.99</div>
+                        <button class="add-to-cart glow-btn" data-product="Mixed Berry Juice" data-price="7.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProduct(4)">
+                    <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Green Detox">
+                    <div class="product-info">
+                        <h3>Green Detox Juice</h3>
+                        <p>Spinach, kale, cucumber and green apple</p>
+                        <div class="price">$8.99</div>
+                        <button class="add-to-cart glow-btn" data-product="Green Detox Juice" data-price="8.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProduct(5)">
+                    <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Pineapple Juice">
+                    <div class="product-info">
+                        <h3>Tropical Pineapple</h3>
+                        <p>Sweet and tangy fresh pineapple juice</p>
+                        <div class="price">$6.49</div>
+                        <button class="add-to-cart glow-btn" data-product="Tropical Pineapple" data-price="6.49">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Fresh Fruits">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Juice Making Process">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Colorful Juices">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Healthy Juices">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Delivery</h3>
+                    <p>Free delivery of fresh juices to your doorstep</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Service</h3>
+                    <p>Available day and night for your service</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Custom Orders</h3>
+                    <p>Special juices according to your preference</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>Happy Customers</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Asfan Cool Sips juice is really the best! Both freshness and taste are amazing"</p>
+                    <div class="customer-info">
+                        <h4>Ahmad Ali</h4>
+                        <span>Karachi</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Home delivery is very fast and juice is always fresh"</p>
+                    <div class="customer-info">
+                        <h4>Fatima Khan</h4>
+                        <span>Lahore</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Price is reasonable and quality is excellent! I always order from here"</p>
+                    <div class="customer-info">
+                        <h4>Muhammad Hassan</h4>
+                        <span>Islamabad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Asfan Cool Sips</h2>
+                    <p>We are passionate about providing you with the freshest and most nutritious juices made from premium fruits and vegetables. Our cold-pressed method preserves all natural vitamins and minerals.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Natural</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>No Preservatives</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <span>Fresh Daily</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Fresh Fruits">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Fresh Street, Juice City, Islamabad</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>0321-1234567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@asfancoolsips.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="glow-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-glass-whiskey"></i>
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <span>Asfan Cool Sips</span>
+                    </div>
+                    <p>Premium natural juices for a healthier lifestyle</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Asfand Cool Sips. All rights reserved.</p>
+                <button id="footer-home-arrow" class="footer-arrow">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="checkout-btn glow-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
